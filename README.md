@@ -18,4 +18,8 @@ Fortemente inspirado por [Idiomatic CSS](https://github.com/necolas/idiomatic-cs
 [Spanish](http://adrianayala.mx/code-guide/es/) - Translated by [Adrian Ayala](http://adrianayala.mx/)  
 [Indonesian](http://diagramatics.github.io/code-guide-id) - Translated by [Steven Sinatra](http://diagramatics.me)  
 
+### Translates
+
+[pt-br](http://diegoeis.github.io/code-guide/pt-br/) - Translated by [Diego Eis](http://tableless.com.br/)
+
 <3
