@@ -1,15 +1,15 @@
-# Code Guide
+# Guia de Código
 
-Code Guide is a project for documenting standards for developing flexible, durable, and sustainable HTML and CSS. It comes from years of experience writing code on projects of all sizes. It's not the end-all be-all, but it's a start.
+Este Guia é um projeto para documentar padrões de desenvolvimento flexíveis, duráveis e sustentáveis de HTML e CSS. Isto vem de anos de experiência escrevendo código em projetos de todos os tamanhos. Isso não é um guia definitivo, mas é um começo.
 
-**[Start reading ☞](http://mdo.github.io/code-guide)**
+**[Comece a ler ☞](http://diegoeis.github.io/code-guide/pt-br)**
 
-### License
+### Licensa
 
-Released under MIT by, and copyright 2014, @mdo.
+Lançado sob MIT, e copyright 2014, @mdo.
 
-### Thanks
+### Obrigado
 
-Heavily inspired by [Idiomatic CSS](https://github.com/necolas/idiomatic-css) and the [GitHub Styleguide](http://github.com/styleguide).
+Fortemente inspirado por [Idiomatic CSS](https://github.com/necolas/idiomatic-css) e [GitHub Styleguide](http://github.com/styleguide).
 
 <3
