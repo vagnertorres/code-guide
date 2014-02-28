@@ -14,6 +14,6 @@ Fortemente inspirado por [Idiomatic CSS](https://github.com/necolas/idiomatic-cs
 
 ### Translates
 
-[pt-br](http://diegoeis.github.io/code-guide/pt-br/) - Translated by [Diego Eis](http://tableless.com.br/)
+[Portugese](http://diegoeis.github.io/code-guide/pt-br/) - Translated by [Diego Eis](http://tableless.com.br/)
 
 <3
