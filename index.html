@@ -83,8 +83,8 @@ layout: default
 
 <div class="section" id="html-encoding">
   <div class="col">
-    <h3>Encoding de caractéres</h3>
-    <p>Assegure-se rapidamente que a renderizaçnao do seu conteúdo declarando o encoding de caractéres explicitamente.</p>
+    <h3>Character encoding</h3>
+    <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
@@ -120,7 +120,7 @@ layout: default
     <p>Atributos HTML devem usar esta ordem em particular para facilitar a leitura do código.</p>
     <ul>
       <li><code>class</code></li>
-      <li><code>id</code></li>
+      <li><code>id</code>, <code>name</code></li>
       <li><code>data-*</code></li>
       <li><code>for</code>, <code>type</code>, ou <code>href</code></li>
     </ul>
@@ -198,8 +198,16 @@ layout: default
 <div class="section" id="css-declaration-order">
   <div class="col">
     <h3>Ordem das declarações</h3>
-    <p>Declarações relacionadas devem ser agrupadas, colocando posicionamento e as propriedades de box-model perto do topo, seguido das propriedades de tipografia e depois propriedades visuais.</p>
-    <p>Para uma lista completa das propriedades e suas ordens, por favor verifique a página do <a href="http://twitter.github.com/recess">Recess</a>.</p>
+    <p>Declarações relacionadas devem ser agrupadas segundo a seguinte ordem:</p>
+    <ol>
+      <li>Posicionamento</li>
+      <li>Box model</li>
+      <li>Tipografia</li>
+      <li>Visual</li>
+    </ol>
+    <p>Posicionamento vem primeiro por que isto pode remover um elemento do fluxo normal do documento e substituir estilos relacionados. O box model vem depois pois ele dita as dimensões e lugar do componente.</p>
+    <p>Tudo o mais que toma lugar <em>dentro</em> do componente ou não impacta as duas seções anteriores, vem por último.</p>
+    <p>Para uma lista completa de propridades e suas ordens, por favor veja <a href="http://twitter.github.com/recess">Recess</a>,</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/declaration-order.css %}{% endhighlight %}
@@ -241,6 +249,7 @@ layout: default
   <div class="col">
     <h3>Propriedades resumidas</h3>
     <p>Esforce-se muito para usar declarações de propriedades resumidas onde você define todos os valores dessa propriedade. As propriedades resumidas mais usadas incluem:</p>
+
     <ul>
       <li><code>padding</code></li>
       <li><code>margin</code></li>
@@ -274,9 +283,9 @@ layout: default
 <div class="section" id="css-comments">
   <div class="col">
     <h3>Comentários</h3>
-    <p>Código é escrito e mantido por pessoas. Certifique-se de que o código é descritivo, bem comentado e amigável para outros.</p>
-    <p>Grandes pedaços de comentários devem ter contexto e não devem apenas reiterar um nome de classe ou componente.</p>
-  </div>
+    <p>Código é escrito e mantido por pessoas. Certifique-se de que o código é descritivo, bem comentado e amigável para os outros. Grandes pedaços de comentários devem ter contexto e não devem apenas reiterar um nome de classe ou componente.</p>
+    <p>Certifique-se de escrever em sentenças completas ou grandes comentários e frases sucintas para notas gerais.</p>
+
   <div class="col">
     {% highlight css %}{% include css/comments.css %}{% endhighlight %}
   </div>
@@ -340,5 +349,6 @@ layout: default
     </ul>
 
     <p>Considere documentar e aplicar estas configurações para o seu projeto com o <code>.editorconfig</code>. Para um exemplo, veja <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">o arquivo utilizado no Bootstrap</a>. Aprenda mais em <a href="http://editorconfig.org">EditorConfig</a></p>
+
   </div>
 </div>
