@@ -82,8 +82,8 @@ layout: default
 
 <div class="section" id="html-encoding">
   <div class="col">
-    <h3>Character encoding</h3>
-    <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding.</p>
+    <h3>Encoding de caractéres</h3>
+    <p>Assegure-se rapidamente que a renderizaçnao do seu conteúdo declarando o encoding de caractéres explicitamente.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
@@ -119,7 +119,7 @@ layout: default
     <p>Atributos HTML devem usar esta ordem em particular para facilitar a leitura do código.</p>
     <ul>
       <li><code>class</code></li>
-      <li><code>id</code>, <code>name</code></li>
+      <li><code>id</code></li>
       <li><code>data-*</code></li>
       <li><code>for</code>, <code>type</code>, ou <code>href</code></li>
       <li><code>src</code>, <code>for</code>, <code>type</code>, <code>href</code></li>
@@ -186,6 +186,9 @@ layout: default
       <li>Valores separados por vírgula devem incluir um espaço logo depois da vírgula  (ex., <code>box-shadow</code>).</li>
       <li>Não inclua espaços depois das vírgulas <em>como em</em> cores <<code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code> ou <code>rect()</code>. Isto ajuda a diferenciar múltiplos valores (vírgulas, sem espaço) de cores de propriedades múltiplas (vírgulas, com espaço). Também não coloque valores iniciados com zero (ex., <code>.5</code> instead of <code>0.5</code>).</li>
       <li>Deixe todos os valores hexadecimais em caixa baixa, exemplo: <code>#fff</code>. Lestras com caixa baixa são mais fáceis de serem lidas e entendidas quando queremos scanear o documento.</li>
+      <li>Valores separados por vírgula devem incluir um espaço logo depois da vírgula.</li>
+      <li>Não inclua espaços depois das vírgulas <em>como em</em> cores <code>rgb()</code> ou <code>rgba()</code> e não inicie valores com zero.</li>
+      <li>Deixe todos os valores hexadecimais em caixa baixa, exemplo: <code>#fff</code>.</li>
       <li>Use cores em hexadecimal abrevidas quando puder, exemplo: <code>#fff</code> em vez de <code>#ffffff</code>.</li>
       <li>Coloque aspas nos valores em seletores com atributos, exemplo: <code>input[type="text"]</code>.</li>
       <li>Evite especificar unidades quando os valores forem 0, exemplo: <code>margin: 0;</code> em vez de  <code>margin: 0px;</code>.</li>
@@ -210,6 +213,8 @@ layout: default
     <p>Posicionamento vem primeiro por que isto pode remover um elemento do fluxo normal do documento e substituir estilos relacionados. O box model vem depois pois ele dita as dimensões e lugar do componente.</p>
     <p>Tudo o mais que toma lugar <em>dentro</em> do componente ou não impacta as duas seções anteriores, vem por último.</p>
     <p>Para uma lista completa de propridades e suas ordens, por favor veja <a href="http://twitter.github.com/recess">Recess</a>,</p>
+    <p>Declarações relacionadas devem ser agrupadas, colocando posicionamento e as propriedades de box-model perto do topo, seguido das propriedades de tipografia e depois propriedades visuais.</p>
+    <p>Para uma lista completa das propriedades e suas ordens, por favor verifique a página do <a href="http://twitter.github.com/recess">Recess</a>.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/declaration-order.css %}{% endhighlight %}
@@ -251,7 +256,6 @@ layout: default
   <div class="col">
     <h3>Propriedades resumidas</h3>
     <p>Esforce-se muito para usar declarações de propriedades resumidas onde você define todos os valores dessa propriedade. As propriedades resumidas mais usadas incluem:</p>
-
     <ul>
       <li><code>padding</code></li>
       <li><code>margin</code></li>
@@ -350,7 +354,6 @@ layout: default
     </ul>
 
     <p>Considere documentar e aplicar estas configurações para o seu projeto com o <code>.editorconfig</code>. Para um exemplo, veja <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">o arquivo utilizado no Bootstrap</a>. Aprenda mais em <a href="http://editorconfig.org">EditorConfig</a></p>
-
   </div>
 </div>
 
