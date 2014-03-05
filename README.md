@@ -6,13 +6,13 @@ Este Guia é um projeto para documentar padrões de desenvolvimento flexíveis, 
 
 ### Licensa
 
-Lançado sob MIT, e copyright 2014, @mdo.
+Lançado sob MIT, e copyright 2014, [@mdo](http://twitter.com/mdo/).
 
 ### Obrigado
 
 Fortemente inspirado por [Idiomatic CSS](https://github.com/necolas/idiomatic-css) e [GitHub Styleguide](http://github.com/styleguide).
 
-### Translates
+### Traduções
 
 [Portuguese](http://diegoeis.github.io/code-guide/pt-br/) - Translated by [Diego Eis](http://tableless.com.br/)  
 [Spanish](http://adrianayala.mx/code-guide/es/) - Translated by [Adrian Ayala](http://adrianayala.mx/)  
