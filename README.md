@@ -19,4 +19,3 @@ Fortemente inspirado por [Idiomatic CSS](https://github.com/necolas/idiomatic-cs
 [Indonesian](http://diagramatics.github.io/code-guide-id) - Translated by [Steven Sinatra](http://diagramatics.me)
 
 <3
-
